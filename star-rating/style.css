@@ -1,0 +1,29 @@
+.star-wrapper{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin:auto;
+    height: 35px;
+
+}
+
+.star-wrapper span{
+    font-size: 25px;
+    cursor: pointer;
+}
+.rating-container{
+    display: grid;
+}
+.heading{
+    justify-self: center
+}
+.current-rating{
+    justify-self: center;
+}
+.yellow{
+    color: lightsalmon;
+}
+.none{
+    background-color: "";
+}
