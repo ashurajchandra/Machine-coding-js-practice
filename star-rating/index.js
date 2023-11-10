@@ -36,11 +36,11 @@ function handleMouseLeave(){
     }
 }
 
-const starItems =[...stars.children]
-starItems.forEach((star)=>star.addEventListener("mouseenter",handleMouseEnter))
-starItems.forEach((star)=>star.addEventListener("mouseleave",handleMouseLeave))
+// const starItems =[...stars.children]
+// starItems.forEach((star)=>star.addEventListener("mouseenter",handleMouseEnter))
+// starItems.forEach((star)=>star.addEventListener("mouseleave",handleMouseLeave))
 
 
 stars.addEventListener("click", handleRatings)
-// stars.addEventListener("mouseenter",handleMouseEnter)
-// stars.addEventListener("mouseleave",handleMouseLeave)
+stars.addEventListener("mouseover",handleMouseEnter)
+stars.addEventListener("mouseleave",handleMouseLeave)
