@@ -1,0 +1,41 @@
+.tab-wrapper{
+
+}
+.tab-heading{
+       display: flex;
+        width: 15%;
+        border: 2px solid grey;
+        justify-content: space-around;
+}
+.tab-heading p{
+    background-color: brown;
+    padding: 6px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.tab-content{
+ height: 300px;
+ width: 60%;
+ background-color: aliceblue;
+ border: 2px solid grey;
+ margin: auto;
+}
+.tab-1-content{
+padding: 10px;
+}
+.tab-2-content{
+    padding: 10px;
+}
+.tab-1{
+
+}
+.tab-2{
+
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
