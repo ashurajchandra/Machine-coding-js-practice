@@ -108,11 +108,14 @@ function handleTabClick(e) {
         }
     }
 }
+```javascript.
+
 This function handles the click event on tabs. It retrieves the data-tab-target attribute of the clicked tab and iterates through all tabs. If the clicked tab matches the current iteration tab, it adds the 'activeTab' class to the clicked tab, removes the 'activeTab' class from other tabs, and renders the content of the clicked tab using the renderTabContent function.
 
-renderTabContent <a name="rendertabcontent"></a>
-javascript
-Copy code
+
+### renderTabContent <a name="rendertabcontent"></a>
+```javascript
+
 function renderTabContent(id) {
     // Iterate through all tab content elements
     for (let i = 0; i < tabContents.children.length; i++) {
@@ -128,6 +131,7 @@ function renderTabContent(id) {
         }
     }
 }
+```javascript
 This function is responsible for rendering the content of the clicked tab. It iterates through all tab content elements and shows the content of the clicked tab by adding the 'active' class. It hides the content of other tabs by removing the 'active' class.
 
 CSS Styles <a name="css-styles"></a>
@@ -138,4 +142,6 @@ The CSS file (style.css) provides styling for the Tabs component. It includes st
 .tabs: Styles the container for tabs with a border at the bottom.
 .tabs p: Styles individual tabs with a cursor pointer and a hover effect.
 .activeTab: Styles the active tab with a background color.
+
+
 This documentation provides an understanding of how the Tabs component works, the structure of the HTML file, the flow of JavaScript functions, and the associated CSS styles. Users can refer to this documentation for a clear overview of the implementation and customization options.
