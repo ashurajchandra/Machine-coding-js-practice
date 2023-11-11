@@ -68,9 +68,9 @@ CSS Styles <a name="css-styles"></a>
 The CSS file (style.css) provides styling for the Tabs component. It includes styles for the tabs, tab content, and the active tab.
 
 [data-tab-content]: Hides all tab content elements by default.
-.active[data-tab-content]: Displays the content of the active tab.
-.tabs: Styles the container for tabs with a border at the bottom.
-.tabs p: Styles individual tabs with a cursor pointer and a hover effect.
-.activeTab: Styles the active tab with a background color.
+*.`active[data-tab-content]`: Displays the content of the active tab.
+*.`tabs`: Styles the container for tabs with a border at the bottom.
+* .`tabs p`: Styles individual tabs with a cursor pointer and a hover effect.
+*.`activeTab`: Styles the active tab with a background color.
 
 This documentation provides an understanding of how the Tabs component works, the structure of the HTML file, the flow of JavaScript functions, and the associated CSS styles. Users can refer to this documentation for a clear overview of the implementation and customization options.
