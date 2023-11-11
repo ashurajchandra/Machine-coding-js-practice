@@ -40,8 +40,12 @@ function handleTabClick(e) {
         }
     }
 }
+```
 
-renderTabContent <a name="rendertabcontent"></a>
+This function handles the click event on tabs. It retrieves the data-tab-target attribute of the clicked tab and iterates through all tabs. If the clicked tab matches the current iteration tab, it adds the 'activeTab' class to the clicked tab, removes the 'activeTab' class from other tabs, and renders the content of the clicked tab using the renderTabContent function.
+
+### renderTabContent <a name="rendertabcontent"></a>
+```javascript
 function renderTabContent(id) {
     // Iterate through all tab content elements
     for (let i = 0; i < tabContents.children.length; i++) {
@@ -57,6 +61,7 @@ function renderTabContent(id) {
         }
     }
 }
+```
 This function is responsible for rendering the content of the clicked tab. It iterates through all tab content elements and shows the content of the clicked tab by adding the 'active' class. It hides the content of other tabs by removing the 'active' class.
 
 CSS Styles <a name="css-styles"></a>
