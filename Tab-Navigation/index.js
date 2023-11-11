@@ -1,29 +1,28 @@
-const tabs = document.querySelector(".tab-heading");
-const tabContent = document.querySelector(".tab-content");
+const tabs = document.querySelector(".tabs")
+const tabContents = document.querySelector(".tab-content")
 
 function handleTabClick(e){
-     for(let i=0; i<e.target.id; i++){
-        if(i+1 == e.target.id){
-            const currentTab = tabs.children[i].id;
-            renderCurrentTabContent(e.target.id)
-        }
-
-     }
-   
-}
-
-function renderCurrentTabContent(id){
-    for(let i=0; i<tabContent.children.length; i++){
-        const content =tabContent.children[i];
-       
-        if(content.id ==id){
-            content.classList.add("show")
-            content.classList.remove("hide")
+    const clickedTabId =e.target.dataset.tabTarget
+    for(let i=0; i<tabs.children.length; i++){
+        const tabId =tabs.children[i].dataset.tabTarget
+        if(clickedTabId == tabId ){
+            tabs.children[i].classList.add("activeTab")
+          renderTabContent(clickedTabId)
         }else{
-            content.classList.add("hide")
+            tabs.children[i].classList.remove("activeTab")
         }
-    } 
+    }
 }
 
+function renderTabContent(id){
+ for(let i=0; i<tabContents.children.length; i++){
+    const tabContent =tabContents.children[i]
+    if(id ==tabContent.id){
+        tabContent.classList.add("active")
+    }else{
+        tabContent.classList.remove("active")
+    }
+ }
+}
 
 tabs.addEventListener("click",handleTabClick)
