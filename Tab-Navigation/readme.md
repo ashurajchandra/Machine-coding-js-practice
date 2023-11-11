@@ -3,6 +3,8 @@
 ## Overview
 This document provides detailed documentation for the Tabs component implemented in HTML, CSS, and JavaScript. The Tabs component allows users to switch between different content sections by clicking on corresponding tabs.
 
+## live-url: https://654f6cfc51f89625578cf8e8--legendary-sopapillas-0916b1.netlify.app/
+
 ## Table of Contents
 1. [HTML Structure](#html-structure)
 2. [JavaScript Functions](#javascript-functions)
