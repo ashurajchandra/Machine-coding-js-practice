@@ -64,13 +64,13 @@ function renderTabContent(id) {
 ```
 This function is responsible for rendering the content of the clicked tab. It iterates through all tab content elements and shows the content of the clicked tab by adding the 'active' class. It hides the content of other tabs by removing the 'active' class.
 
-CSS Styles <a name="css-styles"></a>
+### <a name="css-styles"></a>
 The CSS file (style.css) provides styling for the Tabs component. It includes styles for the tabs, tab content, and the active tab.
 
-[data-tab-content]: Hides all tab content elements by default.
-*.`active[data-tab-content]`: Displays the content of the active tab.
-*.`tabs`: Styles the container for tabs with a border at the bottom.
-* .`tabs p`: Styles individual tabs with a cursor pointer and a hover effect.
-*.`activeTab`: Styles the active tab with a background color.
+1. [data-tab-content]: Hides all tab content elements by default.
+2.`active[data-tab-content]`: Displays the content of the active tab.
+3.`tabs`: Styles the container for tabs with a border at the bottom.
+4 .`tabs p`: Styles individual tabs with a cursor pointer and a hover effect.
+5.`activeTab`: Styles the active tab with a background color.
 
 This documentation provides an understanding of how the Tabs component works, the structure of the HTML file, the flow of JavaScript functions, and the associated CSS styles. Users can refer to this documentation for a clear overview of the implementation and customization options.
