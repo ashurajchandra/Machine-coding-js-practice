@@ -36,10 +36,6 @@ function handleMouseLeave(){
     }
 }
 
-// const starItems =[...stars.children]
-// starItems.forEach((star)=>star.addEventListener("mouseenter",handleMouseEnter))
-// starItems.forEach((star)=>star.addEventListener("mouseleave",handleMouseLeave))
-
 
 stars.addEventListener("click", handleRatings)
 stars.addEventListener("mouseover",handleMouseEnter)
