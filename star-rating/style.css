@@ -27,3 +27,7 @@
 .none{
     background-color: "";
 }
+.half{
+    color: hsl(to right, lightsalmon 50%);
+}
+

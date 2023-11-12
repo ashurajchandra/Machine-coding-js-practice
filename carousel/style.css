@@ -1,0 +1,44 @@
+.carousel-container{
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   width: 40%;
+   margin-top: 10%;
+
+}
+.images{
+position: relative;
+height: 50vh;
+/* width: 0% */
+}
+.child-image{
+    width: 96%;
+    height: 100%;
+    position: absolute;
+}
+.controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.dots{
+    /* border: 2px solid black; */
+    width: 30%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.dots div{
+    height: 15px;
+    width: 15px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.active-dot{
+    background-color: red;
+}
+.active{
+    z-index: 1;
+}
