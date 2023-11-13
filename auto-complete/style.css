@@ -1,0 +1,40 @@
+.conatiner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input input{
+    height: 40px;
+    width: 400px;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.list-item{
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: darkgray;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    width: 380px;
+    padding: 10px;
+}
+.list-item.active{
+    display: flex;
+    cursor: pointer;
+   
+}
+.child-item{
+    display: none;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.child-item.active{
+ display: block;
+
+}
