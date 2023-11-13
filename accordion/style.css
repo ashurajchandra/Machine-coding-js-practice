@@ -1,0 +1,44 @@
+.container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.accordion{
+    background-color: aliceblue;
+    margin-bottom: 15px;
+}
+
+.expand,.collapse{
+    border: none;
+}
+[data-collapse-target]{
+    display: none;
+}
+.active[data-collapse-target]{
+    display: block;
+}
+.active[data-expand-target]{
+    display: block;
+}
+
+[data-expand-target]{
+ display: none;
+}
+.accordion-head{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+[data-accordion-content]{
+    display: none;
+}
+.active[data-accordion-content]{
+    display: block;
+    transition: 200ms ease-in-out ;
+}
+
+.transform{
+    transform: rotate(180deg);
+}
