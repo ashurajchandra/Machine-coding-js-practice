@@ -1,7 +1,7 @@
 const container = document.querySelector(".container")
 const buttons = document.querySelectorAll("button")
 const mouseClickCords = []
-
+let popedItem = []
 
 
 function handleMouseEvents(e){
@@ -37,9 +37,12 @@ function renderPosNew(arr=[]){
       container.appendChild(createElement(item,index+1))
     })
   }
-let popedItem = []
+
 function handleButtonClick(event,button){
     if(button.id==="1"){
+        if(mouseClickCords.length==0){
+            return
+        }
     const item= mouseClickCords.pop()
     popedItem.push(item)
  console.log("item",item)
@@ -48,6 +51,9 @@ function handleButtonClick(event,button){
  renderPos()
     }else{
         // const newCords = [...mouseClickCords,...popedItem]
+        if(popedItem.length==0){
+            return
+        }
         mouseClickCords.push(popedItem.pop())
         container.replaceChildren()
         // renderPosNew(newCords)
