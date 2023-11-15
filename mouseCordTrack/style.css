@@ -1,0 +1,19 @@
+.container{
+    height: 100vh;
+    background-color: black;
+}
+.container button{
+    z-index: 10;
+}
+
+.mouse-item{
+    /* position: absolute; */
+    color: white;
+    background-color: blue;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 30px;
+}
